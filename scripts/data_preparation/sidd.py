@@ -17,7 +17,7 @@ def main():
 
     opt['input_folder'] = './datasets/SIDD/Data'
     opt['save_folder'] = './datasets/SIDD/train/input_crops'
-    opt['crop_size'] = 512
+    opt['crop_size'] = 256
     opt['step'] = 384
     opt['thresh_size'] = 0
     opt['keywords'] = '_NOISY'
