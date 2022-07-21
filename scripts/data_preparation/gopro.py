@@ -14,16 +14,16 @@ def main():
     opt['n_thread'] = 20
     opt['compression_level'] = 3
 
-    opt['input_folder'] = '/data/lifei/Dataset/Deblurring/HIDE/input'
-    opt['save_folder'] = '/data/lifei/Dataset/Deblurring/HIDE/train/blur_crops'
-    opt['crop_size'] = 512
+    opt['input_folder'] = '/data/Dataset/Deblurring/HIDE/input'
+    opt['save_folder'] = '/data/Dataset/Deblurring/HIDE/train/blur_crops'
+    opt['crop_size'] = 256
     opt['step'] = 256
     opt['thresh_size'] = 0
     extract_subimages(opt)
 
     opt['input_folder'] = '/data/lifei/Dataset/Deblurring/HIDE/target'
     opt['save_folder'] = '/data/lifei/Dataset/Deblurring/HIDE/train/sharp_crops'
-    opt['crop_size'] = 512
+    opt['crop_size'] = 256
     opt['step'] = 256
     opt['thresh_size'] = 0
     extract_subimages(opt)
