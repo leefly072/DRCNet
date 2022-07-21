@@ -32,10 +32,9 @@ Image derain, denoise, deblur.
 
 * prepare data
 
+* ```mkdir ./datasets/Rain13k```
 
-  * ```mkdir ./datasets/Rain13k```
-
-  * download the [train](https://drive.google.com/drive/folders/1Hnnlc5kI0v9_BtfMytC2LR5VpLAFZtVe?usp=sharing) set and [test](https://drive.google.com/drive/folders/1PDWggNh8ylevFmrjo-JEvlmqsDlWWvZs?usp=sharing) set (refer to [MPRNet](https://github.com/swz30/MPRNet))
+* download the [train](https://drive.google.com/drive/folders/1Hnnlc5kI0v9_BtfMytC2LR5VpLAFZtVe?usp=sharing) set and [test](https://drive.google.com/drive/folders/1PDWggNh8ylevFmrjo-JEvlmqsDlWWvZs?usp=sharing) set (refer to [MPRNet](https://github.com/swz30/MPRNet))
 
 
 
@@ -50,30 +49,12 @@ Image derain, denoise, deblur.
 
 
 
-
 <details><summary>Image Denoise - SIDD dataset (Click to expand) </summary>
-
-* prepare data
-
-  * ```mkdir ./datasets/SIDD ```
-  
- 
-  * it should be like:
-  
-    ```bash
-    ./datasets/SIDD/Data
-    ./datasets/SIDD/ValidationNoisyBlocksSrgb.mat
-    ./datasets/SIDD/ValidationGtBlocksSrgb.mat
-    ```
-  
-  * ```python scripts/data_preparation/sidd.py```
-  
-    * crop the train image pairs to 512x512 patches.
 
   
 * train
 
-  * ```python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt options/train/GoPro/DRCNet.yml --launcher pytorch```
+  * ```python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 basicsr/train.py -opt options/train/GoPro/DRCNet.yml --launcher pytorch```
 
 </details>
 
