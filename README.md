@@ -69,7 +69,7 @@ This project is under the MIT license, and it is based on [BasicSR](https://gith
 
 If DRCNet helps your research or work, please consider citing DRCNet.
 ```
-@InProceedings{Li_2022_ECCV,
+@InProceedings{lidrcnet_2022_ECCV,
     author    = {Li, Fei and Shen, Lingfeng and Mi, Yang and Li, Zhenbo},
     title     = {DRCNet: Dynamic Image Restoration Contrastive Network},
     booktitle = {European conference on computer vision},
