@@ -22,40 +22,6 @@ pytorch 1.7.1
 cuda 11.0
 ```
 
-### Image Restoration Tasks
----
-
-<details> <summary> Image Derain - Rain13k dataset (Click to expand) </summary>
-
-* prepare data
-
-* ```mkdir ./datasets/Rain13k```
-
-* download the [train](https://drive.google.com/drive/folders/1Hnnlc5kI0v9_BtfMytC2LR5VpLAFZtVe?usp=sharing) set and [test](https://drive.google.com/drive/folders/1PDWggNh8ylevFmrjo-JEvlmqsDlWWvZs?usp=sharing) set (refer to [MPRNet](https://github.com/swz30/MPRNet))
-
-
-
-
-* train
-
-    * ```python -m torch.distributed.launch --nproc_per_node=8 --master_port=4321 basicsr/train_rain.py -opt options/train/Rain13k/DRCNet.yml --launcher pytorch```
-
-</details>
-
-
-
-
-
-<details><summary>Image Denoise - SIDD dataset (Click to expand) </summary>
-
-  
-* train
-
-  * ```python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 basicsr/train.py -opt options/train/GoPro/DRCNet.yml --launcher pytorch```
-
-</details>
-
-
 
 ### License
 
